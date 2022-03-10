@@ -1,0 +1,14 @@
+/*
+Theme Name: Argon Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Argon Child is a child theme of Argon which adds some features used by author, created by QingChenW
+Author: QingChenW
+Author URI: https://dawncraft.cc/
+Template: argon
+Version: 1.0
+Text Domain: argonchild
+Tags: 父主题有啥标签本主题就有啥标签
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+*/
+@import url("../argon/style.css");
