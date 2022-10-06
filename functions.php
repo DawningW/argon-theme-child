@@ -12,4 +12,17 @@ function child_pre_get_document_title() {
 }
 add_filter('pre_get_document_title', 'child_pre_get_document_title');
 
+function performance() {
+    echo sprintf('在 %.3f 秒内完成 %d 次查询, 使用内存 %.2fMB',
+        timer_stop(0, 3),
+        get_num_queries(),
+        memory_get_peak_usage() / 1024 / 1024
+    );
+    echo "</br>";
+    echo sprintf('本博客已经运行了 %d 天!',
+        floor((time() - strtotime("2021-3-28")) / 86400)
+    );
+}
+add_action('argon_footer_html', 'performance');
+
 ?>
